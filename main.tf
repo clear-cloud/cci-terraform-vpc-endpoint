@@ -8,5 +8,4 @@ resource "aws_vpc_endpoint" "endpoint" {
   service_name = "${element(split(",", var.service_name), count.index)}"
 
   auto_accept         = true
-  vpc_endpoint_type   = "${var.vpc_endpoint_type}"
 }
