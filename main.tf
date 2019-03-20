@@ -1,5 +1,5 @@
 #--------------------------------------------------------------
-# VPC Endpoint(s)
+# VPC Endpoint(s) - GATEWAY type only
 #--------------------------------------------------------------
 
 resource "aws_vpc_endpoint" "endpoint" {

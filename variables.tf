@@ -1,3 +1,4 @@
+variable "route_tables" {}
 variable "service_name" {}
 variable "vpc_id" {}
 
