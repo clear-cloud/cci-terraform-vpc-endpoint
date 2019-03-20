@@ -7,4 +7,7 @@ resource "aws_vpc_endpoint" "endpoint" {
   vpc_id            = "${var.vpc_id}"
   service_name      = "${element(split(",", var.service_name), count.index)}"
   vpc_endpoint_type = "${var.vpc_endpoint_type}"
+
+  private_dns_enabled = true
 }
+
