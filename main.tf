@@ -9,4 +9,5 @@ resource "aws_vpc_endpoint" "endpoint" {
 
   auto_accept         = true
   private_dns_enabled = true
+  vpc_endpoint_type   = "${var.vpc_endpoint_type}"
 }
